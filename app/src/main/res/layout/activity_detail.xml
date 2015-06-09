@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#E0E0E0">
+
+    <TextView
+        android:id="@+id/detail_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#607D8B"/>
+
+    <TextView
+        android:id="@+id/deatil_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#607D8B"/>
+
+    <TextView
+        android:id="@+id/detail_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#607D8B"/>
+
+    <Button
+        android:id="@+id/smsdetail_button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quit"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#4DB6AC"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

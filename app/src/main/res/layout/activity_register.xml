@@ -1,0 +1,72 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/keyhide"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#E0E0E0">
+
+
+    <EditText
+        android:id="@+id/maineditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="  Password"
+        android:drawableLeft="@mipmap/ic_launcher_password">
+
+        <requestFocus />
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/maineditText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="  Verify Password"
+        android:drawableLeft="@mipmap/ic_launcher_verify"/>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher_spinner" />
+
+        <Spinner
+            android:id="@+id/mainspinner1"
+            android:background="#CFD8DC"
+            android:layout_marginLeft="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:prompt="@string/spin_prompt"
+            android:entries="@array/equals" />
+
+
+    </TableRow>
+
+
+    <EditText
+        android:id="@+id/maineditText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="  Answer"
+        android:drawableLeft="@mipmap/ic_launcher_answer"/>
+
+    <Button
+        android:id="@+id/mainbutton1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:background="#4DB6AC"/>
+
+</LinearLayout>

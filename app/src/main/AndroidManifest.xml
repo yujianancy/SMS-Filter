@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.washington.hyj.secretsms" >
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_app"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity.RePwdActivity"
+            android:label="@string/title_activity_re_pwd" >
+        </activity>
+        <activity
+            android:name=".MainActivity.SmsListActivity"
+            android:label="@string/title_activity_sms_list" >
+        </activity>
+        <activity
+            android:name=".MainActivity.DetailActivity"
+            android:label="@string/title_activity_detail" >
+        </activity>
+        <activity
+            android:name=".MainActivity.AddBlackActivity"
+            android:label="@string/title_activity_add_black" >
+        </activity>
+        <activity
+            android:name=".MainActivity.BlackListActivity"
+            android:label="@string/title_activity_black_list" >
+        </activity>
+
+        <receiver android:name=".MainActivity.SmsReceiver" >
+            <intent-filter android:priority="9999" >
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+    </application>
+
+</manifest>

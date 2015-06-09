@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E0E0E0"
+    tools:context="edu.washington.hyj.secretsms.MainActivity.test">
+
+
+    <EditText
+        android:id="@+id/logineditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="  Password"
+        android:inputType="textPassword"
+        android:drawableLeft="@mipmap/ic_launcher_password">
+
+        <requestFocus/>
+
+    </EditText>
+
+    <LinearLayout
+        android:id="@+id/btnset"
+        android:layout_below="@+id/logineditText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <Button
+            android:id="@+id/loginbutton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quit"
+            android:background="#9E9E9E"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:id="@+id/loginbutton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#4DB6AC"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/forgot"
+        android:text="Forgot Password>"
+        android:layout_below="@+id/btnset"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#01579B"
+        android:textStyle="bold|italic"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

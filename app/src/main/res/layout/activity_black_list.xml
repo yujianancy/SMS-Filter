@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#E0E0E0">
+
+    <ImageView
+        android:id="@+id/ivPerson"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_users"
+        android:layout_weight="1"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="30">
+
+        <TextView
+            android:id="@+id/black_list_textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#607D8B"/>
+
+        <TextView
+            android:id="@+id/black_list_textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#607D8B"/>
+    </LinearLayout>
+
+        <Button
+            android:id="@+id/black_list_button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_weight="2"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:background="#4DB6AC"/>
+
+</LinearLayout>
